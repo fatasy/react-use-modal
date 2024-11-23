@@ -1,7 +1,7 @@
 {
-  "name": "react-native-use-dialog",
-  "version": "0.1.0",
-  "description": "react-native-use-dialog",
+  "name": "react-use-modal",
+  "version": "1.0.0",
+  "description": "react-use-modal",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -37,7 +37,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-use-dialog-example",
+    "example": "yarn workspace react-use-modal-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -46,20 +46,33 @@
     "release": "release-it"
   },
   "keywords": [
-    "react-native",
+    "use-modal",
+    "react-use-modal",
+    "react-use-modal-hook",
+    "react-native-use-modal-hook",
+    "react-native-use-modal",
+    "use-dialog",
+    "react-native-use-dialog",
+    "react-use-dialog",
+    "react-use-dialog-hook",
+    "react-native-use-dialog-hook",
+    "react-native-paper-use-dialog",
+    "react-native-paper-use-dialog-hook",
+    "react-native-paper-use-modal",
+    "react-native-paper-use-modal-hook",
     "ios",
     "android"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fatasy/react-native-use-dialog.git"
+    "url": "git+https://github.com/fatasy/react-use-modal.git"
   },
   "author": "Marcelo <marcelo.fatasy@hotmail.com> (https://github.com/fatasy)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fatasy/react-native-use-dialog/issues"
+    "url": "https://github.com/fatasy/react-use-modal/issues"
   },
-  "homepage": "https://github.com/fatasy/react-native-use-dialog#readme",
+  "homepage": "https://github.com/fatasy/react-use-modal#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -68,6 +81,7 @@
     "@evilmartians/lefthook": "^1.5.0",
     "@react-native/eslint-config": "^0.73.1",
     "@release-it/conventional-changelog": "^9.0.2",
+    "@testing-library/react-native": "^12.8.1",
     "@types/jest": "^29.5.5",
     "@types/react": "^18.2.44",
     "commitlint": "^17.0.2",
@@ -80,6 +94,7 @@
     "react": "18.3.1",
     "react-native": "0.76.3",
     "react-native-builder-bob": "^0.33.1",
+    "react-test-renderer": "^18.3.1",
     "release-it": "^17.10.0",
     "typescript": "^5.2.2"
   },
@@ -91,7 +106,8 @@
     "react-native": "*"
   },
   "workspaces": [
-    "example"
+    "example/react-native",
+    "example/react-native-paper"
   ],
   "packageManager": "yarn@3.6.1",
   "jest": {
@@ -183,5 +199,9 @@
     "languages": "js",
     "type": "library",
     "version": "0.44.2"
+  },
+  "dependencies": {
+    "@types/invariant": "^2.2.37",
+    "invariant": "^2.2.4"
   }
 }

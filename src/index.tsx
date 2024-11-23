@@ -1,3 +1,2 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
+export { ModalsProvider } from './provider';
+export { useModals, type ModalProps } from './use-modal';
