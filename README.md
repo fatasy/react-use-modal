@@ -1,4 +1,4 @@
-### Documentation for `react-use-modals` (with React Native, Expo and React Examples)
+### Documentation for `f-react-use-modals` (with React Native, Expo and React Examples)
 
 The `useModals` hook provides a simple and practical API for managing modals in both React Native and React applications, allowing you to open, pass data to, and retrieve results from custom modal components.
 
@@ -9,9 +9,9 @@ The `useModals` hook provides a simple and practical API for managing modals in 
 Before using it, make sure to install the library:
 
 ```bash
-npm install react-use-modal
+npm install f-react-use-modal
 # or
-yarn add react-use-modal
+yarn add f-react-use-modal
 ```
 
 ---
@@ -23,7 +23,7 @@ The `useModals` hook allows you to open and manage modals. It provides methods s
 #### Importing
 
 ```tsx
-import { useModals } from 'react-use-modal';
+import { useModals } from 'f-react-use-modal';
 ```
 
 ---
@@ -45,7 +45,7 @@ const handleOpenModal = () => {
 Wrap your application with the `ModalProvider`:
 
 ```tsx
-import { ModalProvider } from 'react-use-modal';
+import { ModalProvider } from 'f-react-use-modal';
 
 export default function App() {
   return (
@@ -60,7 +60,7 @@ export default function App() {
 
 ```tsx
 import { Button, Modal, Text } from 'react-native';
-import { type ModalProps } from 'react-use-modal';
+import { type ModalProps } from 'f-react-use-modal';
 
 export const CustomModal = ({ open, onClose }: ModalProps) => {
   return (
@@ -80,7 +80,7 @@ export const CustomModal = ({ open, onClose }: ModalProps) => {
 Wrap your React application with `ModalProvider`:
 
 ```tsx
-import { ModalProvider } from 'react-use-modal';
+import { ModalProvider } from 'f-react-use-modal';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -142,7 +142,7 @@ React Native:
 ```tsx
 import React from 'react';
 import { Button, Modal, Text, TextInput } from 'react-native';
-import { type ModalProps } from 'react-use-modal';
+import { type ModalProps } from 'f-react-use-modal';
 
 export const CustomModalResult = ({
   open,

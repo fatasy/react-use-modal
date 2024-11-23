@@ -773,6 +773,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/invariant@npm:^2.2.37":
+  version: 2.2.37
+  resolution: "@types/invariant@npm:2.2.37"
+  checksum: dd6ee07af8516d21c868f95fd96c601c50a231e69c2df69360cb491b5858c76cf9b5a646df166cb4197b5078ca824da3dd90d6142d01a3cefc1176c57278b129
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.15":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
@@ -1518,6 +1525,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"f-react-use-modal@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "f-react-use-modal@npm:1.0.0"
+  dependencies:
+    "@types/invariant": ^2.2.37
+    invariant: ^2.2.4
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 055592d69fc503067c2cd5dad190dd2fc00255fc9916f93686ead56a7b79164f6e77e46e9cc242e278129a552a7d5d7ffb13dd9b09337b4c99448590bce35c94
+  languageName: node
+  linkType: hard
+
 "fast-deep-equal@npm:^3.1.1, fast-deep-equal@npm:^3.1.3":
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
@@ -1800,6 +1820,15 @@ __metadata:
   version: 4.0.0
   resolution: "indent-string@npm:4.0.0"
   checksum: 824cfb9929d031dabf059bebfe08cf3137365e112019086ed3dcff6a0a7b698cb80cf67ccccde0e25b9e2d7527aa6cc1fed1ac490c752162496caba3e6699612
+  languageName: node
+  linkType: hard
+
+"invariant@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "invariant@npm:2.2.4"
+  dependencies:
+    loose-envify: ^1.0.0
+  checksum: cc3182d793aad82a8d1f0af697b462939cb46066ec48bbf1707c150ad5fad6406137e91a262022c269702e01621f35ef60269f6c0d7fd178487959809acdfb14
   languageName: node
   linkType: hard
 
@@ -2451,6 +2480,7 @@ __metadata:
     eslint: ^9.13.0
     eslint-plugin-react-hooks: ^5.0.0
     eslint-plugin-react-refresh: ^0.4.14
+    f-react-use-modal: ^1.0.0
     globals: ^15.11.0
     react: ^18.3.1
     react-dom: ^18.3.1

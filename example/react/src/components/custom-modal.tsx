@@ -1,5 +1,5 @@
+import { type ModalProps } from 'f-react-use-modal';
 import Modal from 'react-modal';
-import { type ModalProps } from 'react-use-modal';
 
 export const CustomModal = ({ open, onClose }: ModalProps) => {
   return (
